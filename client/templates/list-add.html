@@ -7,21 +7,28 @@
     <ion-list>
       
     </ion-list>
-<div class="list">
-  <label class="item item-input item-stacked-label">
-    <span class="input-label">List Name</span>
-    <input type="text" ng-model="nameName" placeholder="Eden" >
+    <br/>
+<!-- <div class="list"> -->
+<form name="loginform" layout="row" layout-sm="column" >
+<!--   <label class="item item-input"> -->
+<md-input-container flex>
+
+    <label>List Name</label>
+    <input type="text" ng-model="nameName" >
+        </md-input-container>
    <!--  <input type="text" ng-model="asd"> -->
-  </label>
-  <label class="item item-input item-stacked-label">
-    <span class="input-label">Description</span>
-    <input type="text" placeholder="Great milk store" ng-model="description">
-  </label>
-</div>
-<button class="button button-block button-positive" ng-click="CreateList(nameName,description)">Create List</button>
+<!--   </label>
+  <label class="item item-input "> -->
+    <md-input-container flex>
 
-
+    <label>Description</label>
+    <input type="text" ng-model="description">
+        </md-input-container>
+<!--   </label> -->
+  </form>
+<!-- </div> -->
+<section layout="row" layout-align="center center">
+<md-button nav-clear flex class="md-raised md-primary" ng-click="CreateList(nameName,description)">Create List</md-button>
+</section>
   </ion-content>
-    
-
 </ion-view>
