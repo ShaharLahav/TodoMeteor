@@ -1,0 +1,27 @@
+<ion-view view-title="List Addition">
+<button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item"><i class="icon ion-ios-arrow-back"></i> 
+      <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title hide">Back</span><span class="previous-title">Home</span></span></button>
+
+
+  <ion-content>
+    <ion-list>
+      
+    </ion-list>
+<div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">List Name</span>
+    <input type="text" ng-model="nameName" placeholder="Eden" >
+   <!--  <input type="text" ng-model="asd"> -->
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Description</span>
+    <input type="text" placeholder="Great milk store" ng-model="description">
+  </label>
+</div>
+<button class="button button-block button-positive" ng-click="CreateList(nameName,description)">Create List</button>
+
+
+  </ion-content>
+    
+
+</ion-view>
