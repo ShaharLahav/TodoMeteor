@@ -4,12 +4,19 @@ angular
 
 function config($stateProvider, $urlRouterProvider) {
   $stateProvider
+    .state('login', {
+      url: '/login',
 
+      templateUrl: 'client/templates/favs.html',
+      controller: 'favs'
+
+
+    })
     .state('tab', {
-    url: '/tab',
-    abstract: true,
-    templateUrl: 'client/templates/tabs.html'
-  })
+      url: '/tab',
+      abstract: true,
+      templateUrl: 'client/templates/tabs.html'
+    })
 
   .state('tab.chats', {
       url: '/lists',
@@ -20,12 +27,12 @@ function config($stateProvider, $urlRouterProvider) {
         }
       }
     })
-    .state('tab.favs', {
-      url: '/favs',
+    .state('tab.info', {
+      url: '/info',
       views: {
-        'tab-favs': {
-          templateUrl: 'client/templates/favs.html',
-          controller: 'favs'
+        'tab-info': {
+          templateUrl: 'client/templates/info.html',
+          controller: 'info'
         }
       }
     })
@@ -49,5 +56,5 @@ function config($stateProvider, $urlRouterProvider) {
     });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/lists');
+  $urlRouterProvider.otherwise('/login');
 }

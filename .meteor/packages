@@ -20,3 +20,11 @@ angular
 driftyco:ionic
 momentjs:moment
 fourseven:scss
+accounts-ui
+accounts-password
+angular:angular-material
+urigo:angular-blaze-template
+useraccounts:core
+accounts-google
+useraccounts:ionic
+service-configuration
